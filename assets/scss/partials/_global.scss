@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  section {
+    padding: 70px 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  p {
+    font-size: 1rem;
+  
+    @media (max-width: 576px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  input,
+  textarea {
+    outline: none;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .title {
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+  
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  
+    @media (max-width: 576px) {
+      font-size: 1.2rem;
+    }
+  }

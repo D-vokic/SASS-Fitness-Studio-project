@@ -1,0 +1,85 @@
+.nav {
+    background-color: $secondaryColor;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  
+    .nav-wrapper {
+      @include flex(space-between);
+  
+      .nav-logo {
+        color: $white;
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: 700;
+  
+        &:hover {
+          color: $primaryColor;
+        }
+  
+        @media (max-width: 576px) {
+          font-size: 1rem;
+        }
+      }
+  
+      .nav-list {
+        display: flex;
+        gap: 1rem;
+  
+        li {
+          a {
+            color: $white;
+            text-transform: uppercase;
+  
+            &:hover {
+              color: $primaryColor;
+            }
+  
+            &:active {
+              color: green;
+            }
+          }
+        }
+  
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+  
+      .nav-icons {
+        a {
+          color: $white;
+  
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+  
+          &:hover {
+            color: $primaryColor;
+          }
+  
+          @media (max-width: 1100px) {
+            display: none;
+          }
+        }
+      }
+  
+      #hamburger {
+        color: $white;
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+  
+        @media (max-width: 992px) {
+          display: block;
+        }
+  
+        @media (max-width: 576px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }

@@ -1,0 +1,43 @@
+@mixin grid($numberOfColumns: 2, $widthOfColumns: 1fr, $gap: 2rem) {
+    display: grid;
+    grid-template-columns: repeat($numberOfColumns, $widthOfColumns);
+    gap: $gap;
+  }
+  
+  @mixin flex($justify: center, $align: center, $flow: row nowrap, $gap: 0px) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+    gap: $gap;
+  }
+  
+  @mixin btn(
+    $color:white,
+    $bgColor: $primaryColor,
+    $borderColor: transparent,
+    $hoverColor: $primaryColor,
+    $hoverBg: white,
+    $borderColorHover: transparent
+  ) {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    color: $color;
+    background-color: $bgColor;
+    border: 1px solid $borderColor;
+  
+    &:hover {
+      color: $hoverColor;
+      background-color: $hoverBg;
+      border: 1px solid $borderColorHover;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: .8rem 1rem;
+      font-size: 0.6em;
+    }
+  }

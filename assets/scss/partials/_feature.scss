@@ -1,0 +1,84 @@
+.feature {
+  background-color: $secondaryColor;
+  color: $white;
+
+  .feature-wrapper {
+    @include grid();
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    article {
+      padding: 2rem;
+
+      @media (max-width: 992px) {
+        padding: 1rem;
+      }
+
+      &:first-child {
+        border-right: 1px solid #777;
+
+        @media (max-width: 992px) {
+          border: none;
+        }
+      }
+
+      .title {
+        color: $white;
+        letter-spacing: normal;
+
+        @media screen and (max-width: 576px) {
+          font-size: 1.7rem;
+        }
+      }
+
+      h3 {
+        font-weight: 500;
+        max-width: 700px;
+
+        @media screen and (max-width: 576px) {
+          font-size: 1rem;
+        }
+      }
+
+      .text {
+        margin: 2rem 0;
+        font-size: 0.9rem;
+        text-align: justify;
+        color: $lightGray;
+
+        @media screen and (max-width: 576px) {
+          font-size: 0.8rem;
+        }
+      }
+
+      button {
+        @include btn();
+        width: 100%;
+
+        @media screen and (max-width: 576px) {
+          font-size: 0.7rem;
+        }
+      }
+
+      .bold {
+        font-weight: 700;
+      }
+
+      .first {
+        margin: 1rem 0;
+
+        p:nth-child(2) {
+          color: $lightGray;
+        }
+      }
+
+      .second {
+        p:nth-child(2) {
+          color: $lightGray;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.footer {
+  @include flex(space-between, center, wrap);
+
+  @media (width <= 768px) {
+    gap: 1rem;
+  }
+
+  @media (width <= 576px) {
+    justify-content: flex-start;
+  }
+
+  article {
+    flex-basis: 45%;
+
+    @media (width <= 768px) {
+      flex-basis: 80%;
+    }
+
+    a {
+      color: #666262;
+    }
+
+    &:first-child {
+      @media (width <= 576px) {
+        font-size: 0.7rem;
+      }
+    }
+
+    &:last-child {
+      @include flex(space-around, center, wrap);
+
+      @media (width <= 576px) {
+        gap: 1rem;
+        justify-content: flex-start;
+      }
+
+      div {
+        flex-basis: 49%;
+
+        @media (width <= 576px) {
+          flex-basis: 80%;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

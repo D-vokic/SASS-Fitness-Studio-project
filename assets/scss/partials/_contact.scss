@@ -1,0 +1,48 @@
+.contact{
+    @include flex(space-between, stretch, wrap);
+  
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+      gap: 5rem;
+    }
+    
+    article{
+      flex-basis: 40%;
+  
+      @media screen and (max-width: 1200px) {
+        flex-basis: 80%;
+      }
+  
+      @media screen and (max-width: 576px) {
+        flex-basis: 100%;
+      }
+  
+      form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+  
+        .form-element{
+          background: transparent;
+          padding: 1rem;
+          border: 1px solid #ddd;
+  
+          &::placeholder{
+            font-size: 1.1rem;
+          }
+        }
+  
+        button{
+          @include btn(white, black, transparent, white, $primaryColor, transparent);
+          }
+      }
+  
+      .google-map{
+        margin-top: 8rem;
+  
+        @media screen and (max-width: 576px) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
