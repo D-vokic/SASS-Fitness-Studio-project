@@ -1,5 +1,5 @@
 # 7-SASS-Fitness-Studio-project
- https://duskorsl.github.io/7-SASS-Fitness-Studio-project/
+ https://D-vokic.github.io/7-SASS-Fitness-Studio-project/
 
 Hi, I am Duško.
 
