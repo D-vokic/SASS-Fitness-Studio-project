@@ -1,5 +1,6 @@
 # SASS-Fitness-Studio-project
- https://D-vokic.github.io/7-SASS-Fitness-Studio-project/
+
+Curious to see how it works? Check out the full demo [here](https://d-vokic.github.io/SASS-Fitness-Studio-project/)
 
 Hi, I am Duško.
 
